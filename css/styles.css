@@ -35,6 +35,7 @@ body {
   background-color: var(--white-bg-color);
   font-family: var(--mein-txt), sans-serif;
   font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 p,
@@ -111,7 +112,6 @@ address {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 .logo.link {
@@ -316,14 +316,13 @@ address {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
-  letter-spacing: 0.03em;
+
   text-transform: uppercase;
   color: var(--text-color);
 }
 
 .services .text {
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 /* work */
@@ -370,7 +369,7 @@ address {
   font-weight: 700;
   line-height: 1.14;
   text-align: center;
-  letter-spacing: 0.03em;
+
   text-transform: uppercase;
 
   background-color: rgba(47, 48, 58, 0.8);
@@ -390,7 +389,7 @@ address {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
+
   text-align: center;
 }
 
@@ -424,7 +423,7 @@ address {
   color: var(--text-color);
   font-weight: 500;
   font-size: 16px;
-  letter-spacing: 0.03em;
+
   line-height: 1.18;
 }
 
@@ -434,7 +433,6 @@ address {
   text-align: center;
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
 }
 
 .socials-link-list {
@@ -477,7 +475,6 @@ address {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: var(--text-color);
 }
@@ -601,14 +598,14 @@ address {
 .contact .address-studio {
   color: var(--white-txt-color);
   line-height: 1.71;
-  letter-spacing: 0.03em;
+
   transition: color 250ms var(--timing-f);
 }
 
 .contact .address-contact {
   color: var(--footer-secondori-color);
   line-height: 1.71;
-  letter-spacing: 0.03em;
+
   transition: color 250ms var(--timing-f);
 }
 
@@ -629,7 +626,7 @@ address {
 
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
+
   text-transform: uppercase;
   color: var(--white-txt-color);
 }
@@ -664,6 +661,82 @@ address {
   background-color: var(--accent-color);
 }
 
+/* footer form */
+
+.footer-form-conteiner {
+  margin-left: 93px;
+}
+
+.footer-form-title {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--white-txt-color);
+}
+
+.footer-form-label {
+  margin-right: 12px;
+}
+
+.footer-form-input {
+  width: 358px;
+  height: 50px;
+
+  margin-right: 12px;
+  padding: 0;
+  padding-left: 16px;
+
+  color: var(--white-txt-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: inherit;
+  border-radius: 4px;
+}
+
+.footer-form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.footer-bt {
+  display: inline-flex;
+  align-items: center;
+  max-width: 200px;
+  max-height: 50px;
+  padding: 10px 28px 10px 29px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  border: none;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--white-txt-color);
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: background-color 250ms var(--timing-f);
+}
+
+.footer-bt:hover,
+.footer-bt:focus {
+  background-color: var(--button-accent);
+}
+
+.footer-bt-icon {
+  align-items: center;
+  justify-items: center;
+  margin-left: 10px;
+
+  fill: var(--white-txt-color);
+}
+
 /* portfolio.html */
 
 .filter-list {
@@ -684,7 +757,7 @@ address {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
+
   text-align: center;
 
   cursor: pointer;
@@ -758,7 +831,6 @@ address {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
-  letter-spacing: 0.03em;
 
   background-color: var(--overley-bg);
   color: var(--white-txt-color);
@@ -790,5 +862,4 @@ address {
   color: var(--mein-text-color);
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
 }
