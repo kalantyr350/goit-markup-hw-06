@@ -534,11 +534,12 @@ address {
 .modal {
   position: absolute;
   width: 528px;
-  height: 581px;
-
+  min-height: 581px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  padding: 40px;
 
   background-color: var(--white-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -554,36 +555,41 @@ address {
 }
 
 .modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 8px;
-  margin-right: 8px;
-  margin-left: auto;
   padding: 0;
 
+  color: #000;
   background: var(--white-bg-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  transition: fill 250ms var(--accent-color);
+  transition: color 250ms var(--timing-f);
   cursor: pointer;
 }
 
 .modal-close {
   display: inline-block;
+  fill: currentColor;
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
-  fill: var(--accent-color);
+.modal-btn:hover .modal-close,
+.modal-btn:focus .modal-close {
+  color: var(--accent-color);
 }
 
-.conteiner-modal {
-  width: 448px;
-  margin: 0 auto;
+.modal-form {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
 }
 
 .modal-title {
@@ -603,10 +609,8 @@ address {
 
 .modal-lable {
   display: inline-block;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 
-  font-size: 12px;
-  line-height: 1.16;
   letter-spacing: 0.01em;
 }
 
@@ -617,10 +621,11 @@ address {
 
   padding: 0 0 0 42px;
 
+  color: var(--text-color);
   background-color: inherit;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  color: var(--text-color);
+  outline: none;
   transition: border-color 250ms var(--timing-f);
 }
 
@@ -628,7 +633,8 @@ address {
 .modal-input:focus,
 .modal-textarea:hover,
 .modal-textarea:focus,
-.modal-input:focus + .form-icon {
+.modal-input:focus + .form-icon,
+.modal-input:hover + .form-icon {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -645,17 +651,13 @@ address {
   fill: var(--text-color);
 }
 
-.modal-lable-feedback {
+.modal-feedback {
   display: block;
-  margin-bottom: 4px;
-}
-
-.form-field-feedback {
   margin-bottom: 20px;
 }
 
 .modal-textarea {
-  display: inline-block;
+  display: block;
   width: 100%;
   height: 120px;
 
@@ -666,11 +668,11 @@ address {
   border-radius: 5px;
   color: var(--text-color);
   resize: none;
+  outline: none;
+  transition: border-color 250ms var(--timing-f);
 }
 
 .modal-textarea::placeholder {
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
@@ -720,7 +722,7 @@ address {
   text-decoration-line: underline;
 }
 
-.modal-bt {
+.modal-submit-btn {
   display: block;
   margin: 0 auto;
   padding: 10px 55px 10px 56px;
@@ -739,6 +741,7 @@ address {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
+  cursor: pointer;
   transition: background-color 250ms var(--timing-f);
 }
 
