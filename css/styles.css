@@ -630,10 +630,10 @@ address {
 }
 
 .modal-input:hover,
-.modal-input:focus,
+.modal-input:focus-within,
 .modal-textarea:hover,
 .modal-textarea:focus,
-.modal-input:focus + .form-icon,
+.modal-input:focus-within + .form-icon,
 .modal-input:hover + .form-icon {
   border-color: var(--accent-color);
   fill: var(--accent-color);
@@ -745,8 +745,8 @@ address {
   transition: background-color 250ms var(--timing-f);
 }
 
-.modal-bt:hover,
-.modal-bt:focus {
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
   background-color: var(--button-accent);
 }
 /* footer */
