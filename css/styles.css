@@ -570,13 +570,13 @@ address {
   background: var(--white-bg-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  transition: color 250ms var(--timing-f);
   cursor: pointer;
 }
 
 .modal-close {
   display: inline-block;
   fill: currentColor;
+  transition: color 250ms var(--timing-f);
 }
 
 .modal-btn:hover .modal-close,
